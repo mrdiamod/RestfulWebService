@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Add detail page</title>
+</head>
+<body>
+<form th:action="@{/details}" method="post">
+    <div><label> Detail Name : <input type="text" name="detailname"/> </label></div>
+    <div><label> Power: <input type="text" name="powerV"/> </label></div>
+    <div><label> Units: <input type="text" name="unitsV"/> </label></div>
+    <div><label> Price: <input type="text" name="priceB"/> </label></div>
+    <div><input type="submit" value="Add"/></div>
+</form>
+</body>
+</html>

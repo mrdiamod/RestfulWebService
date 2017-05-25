@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Add sheme page</title>
+</head>
+<body>
+<form th:action="@{/shemes}" method="post">
+    <div><label> Sheme Name : <input type="text" name="shemename"/> </label></div>
+    <div><label> Information: <input type="text" name="info"/> </label></div>
+    <div><input type="submit" value="Add"/></div>
+</form>
+</body>
+</html>
